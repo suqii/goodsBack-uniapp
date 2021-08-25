@@ -28,7 +28,8 @@
 					</template>
 					<template v-else>
 						<!-- 无内容默认 -->
-						<no-thing></no-thing>
+						<lottie></lottie>
+						<!-- <no-thing></no-thing> -->
 					</template>
 				</scroll-view>
 			</swiper-item>
@@ -73,6 +74,7 @@
 	import topicNav from "../../components/news/topic-nav.vue";
 	import topicList from "../../components/news/topic-list.vue";
 	import noThing from "../../components/common/no-thing.vue";
+	import lottie from "../../components/lottie/lottie.vue";
 	export default {
 		components:{
 			newsNavBar,
@@ -80,6 +82,7 @@
 			loadMore,
 			topicNav,
 			topicList,
+			lottie,
 			noThing
 		},
 		computed: {

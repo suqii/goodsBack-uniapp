@@ -42,6 +42,7 @@
 	top: 0;
 	bottom: 0;
 	z-index: 1999;
+	
 }
 .papar-left-popup{
 	position: fixed;
@@ -53,7 +54,8 @@
 	background: #FFFFFF;
 	z-index: 2000;
 	width: 55%;
-	box-shadow: 1upx 1upx 20upx 2upx #CCCCCC;
+	box-shadow: 2upx 2upx 40upx 4upx #CCCCCC;
+	/* border: 1px red solid; */
 }
 .papar-left-popup>view{
 	padding: 20upx;
@@ -65,5 +67,6 @@
 }
 .papar-left-popup-h{
 	background: #EEEEEE;
+	
 }
 </style>

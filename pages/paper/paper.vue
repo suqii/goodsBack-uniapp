@@ -35,7 +35,8 @@
 		</template>
 		<template v-else>
 			<!-- 无内容默认 -->
-			<no-thing></no-thing>
+			<lottie></lottie>
+			<!-- <no-thing></no-thing> -->
 		</template>
 		
 	</view>
@@ -49,11 +50,13 @@
 	import paperLeftPopup from "../../components/paper/paper-left-popup.vue";
 	import Time from "../../common/time.js";
 	import noThing from "../../components/common/no-thing.vue";
+	import lottie from "../../components/lottie/lottie.vue";
 	export default {
 		components:{
 			paperList,
 			paperLeftPopup,
 			noThing,
+			lottie,
 			// #ifndef APP-PLUS
 			uniNavBar
 			// #endif
