@@ -876,7 +876,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_NAME":"仿糗事百科","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"仿糗事百科","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -2064,9 +2064,9 @@ function normalizeComponent (
 /***/ }),
 
 /***/ 11:
-/*!*********************************************************************************************!*\
-  !*** E:/BaiduNetdiskDownload/解压/【20190705更新】【前端完整代码】/【20190705更新】【前端完整代码】/common/config.js ***!
-  \*********************************************************************************************/
+/*!*******************************************************************!*\
+  !*** C:/Users/k.wu/Desktop/物寻归/goodsBack-uniapp/common/config.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2084,9 +2084,9 @@ var _default = {
 /***/ }),
 
 /***/ 12:
-/*!******************************************************************************************!*\
-  !*** E:/BaiduNetdiskDownload/解压/【20190705更新】【前端完整代码】/【20190705更新】【前端完整代码】/common/lib.js ***!
-  \******************************************************************************************/
+/*!****************************************************************!*\
+  !*** C:/Users/k.wu/Desktop/物寻归/goodsBack-uniapp/common/lib.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2198,9 +2198,9 @@ var Update = function Update() {var showToast = arguments.length > 0 && argument
 /***/ }),
 
 /***/ 13:
-/*!**********************************************************************************************!*\
-  !*** E:/BaiduNetdiskDownload/解压/【20190705更新】【前端完整代码】/【20190705更新】【前端完整代码】/common/request.js ***!
-  \**********************************************************************************************/
+/*!********************************************************************!*\
+  !*** C:/Users/k.wu/Desktop/物寻归/goodsBack-uniapp/common/request.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2306,9 +2306,9 @@ var _user = _interopRequireDefault(__webpack_require__(/*! ./user.js */ 14));fun
 /***/ }),
 
 /***/ 14:
-/*!*******************************************************************************************!*\
-  !*** E:/BaiduNetdiskDownload/解压/【20190705更新】【前端完整代码】/【20190705更新】【前端完整代码】/common/user.js ***!
-  \*******************************************************************************************/
+/*!*****************************************************************!*\
+  !*** C:/Users/k.wu/Desktop/物寻归/goodsBack-uniapp/common/user.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3421,9 +3421,9 @@ if (hadRuntime) {
 /***/ }),
 
 /***/ 18:
-/*!*******************************************************************************************!*\
-  !*** E:/BaiduNetdiskDownload/解压/【20190705更新】【前端完整代码】/【20190705更新】【前端完整代码】/common/chat.js ***!
-  \*******************************************************************************************/
+/*!*****************************************************************!*\
+  !*** C:/Users/k.wu/Desktop/物寻归/goodsBack-uniapp/common/chat.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3857,9 +3857,9 @@ var _request = _interopRequireDefault(__webpack_require__(/*! ./request.js */ 13
 /***/ }),
 
 /***/ 19:
-/*!*******************************************************************************************!*\
-  !*** E:/BaiduNetdiskDownload/解压/【20190705更新】【前端完整代码】/【20190705更新】【前端完整代码】/common/time.js ***!
-  \*******************************************************************************************/
+/*!*****************************************************************!*\
+  !*** C:/Users/k.wu/Desktop/物寻归/goodsBack-uniapp/common/time.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9486,7 +9486,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_NAME":"仿糗事百科","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_NAME":"仿糗事百科","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -9507,14 +9507,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_NAME":"仿糗事百科","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"仿糗事百科","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_NAME":"仿糗事百科","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"仿糗事百科","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -9600,7 +9600,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"VUE_APP_NAME":"仿糗事百科","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"仿糗事百科","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -10039,10 +10039,10 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 365:
-/*!******************************************************************************************************************************!*\
-  !*** E:/BaiduNetdiskDownload/解压/【20190705更新】【前端完整代码】/【20190705更新】【前端完整代码】/components/mpvue-citypicker/city-data/province.js ***!
-  \******************************************************************************************************************************/
+/***/ 372:
+/*!****************************************************************************************************!*\
+  !*** C:/Users/k.wu/Desktop/物寻归/goodsBack-uniapp/components/mpvue-citypicker/city-data/province.js ***!
+  \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10189,10 +10189,10 @@ provinceData;exports.default = _default;
 
 /***/ }),
 
-/***/ 366:
-/*!**************************************************************************************************************************!*\
-  !*** E:/BaiduNetdiskDownload/解压/【20190705更新】【前端完整代码】/【20190705更新】【前端完整代码】/components/mpvue-citypicker/city-data/city.js ***!
-  \**************************************************************************************************************************/
+/***/ 373:
+/*!************************************************************************************************!*\
+  !*** C:/Users/k.wu/Desktop/物寻归/goodsBack-uniapp/components/mpvue-citypicker/city-data/city.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11703,10 +11703,10 @@ cityData;exports.default = _default;
 
 /***/ }),
 
-/***/ 367:
-/*!**************************************************************************************************************************!*\
-  !*** E:/BaiduNetdiskDownload/解压/【20190705更新】【前端完整代码】/【20190705更新】【前端完整代码】/components/mpvue-citypicker/city-data/area.js ***!
-  \**************************************************************************************************************************/
+/***/ 374:
+/*!************************************************************************************************!*\
+  !*** C:/Users/k.wu/Desktop/物寻归/goodsBack-uniapp/components/mpvue-citypicker/city-data/area.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24257,9 +24257,9 @@ areaData;exports.default = _default;
 /***/ }),
 
 /***/ 4:
-/*!***************************************************************************************!*\
-  !*** E:/BaiduNetdiskDownload/解压/【20190705更新】【前端完整代码】/【20190705更新】【前端完整代码】/pages.json ***!
-  \***************************************************************************************/
+/*!*************************************************************!*\
+  !*** C:/Users/k.wu/Desktop/物寻归/goodsBack-uniapp/pages.json ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
